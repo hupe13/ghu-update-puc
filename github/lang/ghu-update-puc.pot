@@ -1,0 +1,92 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Updates for plugins from hupe13 hosted on Github "
+"Versions\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-10 09:00+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.7.1; wp-6.7.2\n"
+"X-Domain: leafext-update-github"
+
+#: github/github-functions.php:196
+msgid "active"
+msgstr ""
+
+#: github/github-functions.php:127
+msgid "Github Repositories managed by Plugin Update Checker"
+msgstr ""
+
+#: github/github-settings.php:14
+msgid "Github token"
+msgstr ""
+
+#: github/github-functions.php:195
+msgid "hosted on"
+msgstr ""
+
+#. URI of the plugin
+#. Author URI of the plugin
+msgid "https://leafext.de/en/"
+msgstr ""
+
+#. Author of the plugin
+msgid "hupe13"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"If you have installed any plugins from hupe13 hosted on Github, you can "
+"receive the updates here."
+msgstr ""
+
+#: github/github-functions.php:197
+msgid "link to blog"
+msgstr ""
+
+#. %s is a link.
+#: github/github-settings.php:98
+#, php-format
+msgid "Maybe you need a %1$sGithub token%2$s to receive updates successfully."
+msgstr ""
+
+#: github/github-functions.php:194
+msgid "Name"
+msgstr ""
+
+#: github/github-functions.php:125
+msgid "Plugins by hupe13"
+msgstr ""
+
+#: github/github-settings.php:111
+msgid "Reset"
+msgstr ""
+
+#: ghu-update-hp.php:49 ghu-update-hp.php:57
+msgid "Settings"
+msgstr ""
+
+#. Name of the plugin
+#: github/github-functions.php:123
+msgid "Updates by hupe13 hosted on GitHub"
+msgstr ""
+
+#. %s is a link.
+#: github/github-settings.php:89
+#, php-format
+msgid "You need a %1$sGithub token%2$s to receive updates successfully."
+msgstr ""
+
+#. %s is a link and the name of Plugin Update Checker.
+#: github/github-settings.php:79
+#, php-format
+msgid "You will get updates with the %s."
+msgstr ""
