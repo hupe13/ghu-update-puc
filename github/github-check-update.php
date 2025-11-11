@@ -2,7 +2,7 @@
 /**
  *  Github Plugin Update Checker
  *
- * @package update-hup-ghu
+ * @package ghu-update-puc
  **/
 
 // Direktzugriff auf diese Datei verhindern.
