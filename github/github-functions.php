@@ -108,7 +108,7 @@ function ghupuc_table_repos() {
 					}
 					foreach ( $entry['active'] as $site ) {
 						$blogs[] = '<a href="' . get_admin_url( $site ) .
-						'plugins.php?s=leaflet&plugin_status=all">' .
+						'plugins.php?s=hupe13&plugin_status=all">' .
 						get_blog_option( $site, 'blogname' )
 						. '</a>';
 					}
@@ -118,7 +118,7 @@ function ghupuc_table_repos() {
 					}
 					foreach ( $entry['active'] as $site ) {
 						$blogs[] = '<a href="' . get_admin_url( $site ) .
-						'plugins.php?s=leaflet&plugin_status=all">' .
+						'plugins.php?s=hupe13&plugin_status=all">' .
 						get_option( 'blogname' )
 						. '</a>';
 					}

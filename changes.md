@@ -1,5 +1,9 @@
 # Changelog
 
+### 251113
+
+* typo
+
 ### 251110
 
 * ghu-update-puc: Initial release
