@@ -1,5 +1,9 @@
 # Changelog
 
+### 251118
+
+* admin links
+
 ### 251113
 
 * typo

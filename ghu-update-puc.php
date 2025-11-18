@@ -4,7 +4,7 @@
  * Description:       If you have installed any plugins from hupe13 hosted on Github, you can receive the updates here.
  * Plugin URI:        https://leafext.de/en/
  * Update URI:        https://github.com/hupe13/ghu-update-puc
- * Version:           251113
+ * Version:           251118
  * Requires at least: 6.3
  * Requires PHP:      8.1
  * Author:            hupe13
@@ -48,7 +48,7 @@ require_once __DIR__ . '/admin.php';
 // Add settings to network plugin page
 function ghupuc_network_add_action_update_links( $actions, $plugin ) {
 	if ( $plugin === GHUPUC_BASENAME ) {
-			$actions[] = '<a href="' . esc_url( admin_url( 'admin.php' ) . '?page=ghu-update-puc' ) . '">' . esc_html__( 'Settings', 'ghu-update-puc' ) . '</a>';
+			$actions[] = '<a href="' . esc_url( admin_url( 'admin.php' ) . '?page=' . GHUPUC_NAME ) . '">' . esc_html__( 'Settings', 'ghu-update-puc' ) . '</a>';
 	}
 	return $actions;
 }
@@ -56,7 +56,7 @@ add_filter( 'network_admin_plugin_action_links', 'ghupuc_network_add_action_upda
 
 // Add settings to plugin page
 function ghupuc_add_action_update_links( $actions ) {
-	$actions[] = '<a href="' . esc_url( admin_url( 'admin.php' ) . '?page=ghu-update-puc' ) . '">' . esc_html__( 'Settings', 'ghu-update-puc' ) . '</a>';
+	$actions[] = '<a href="' . esc_url( admin_url( 'admin.php' ) . '?page=' . GHUPUC_NAME ) . '">' . esc_html__( 'Settings', 'ghu-update-puc' ) . '</a>';
 	return $actions;
 }
 add_filter( 'plugin_action_links_' . GHUPUC_NAME . '/ghu-update-puc.php', 'ghupuc_add_action_update_links' );
