@@ -2,8 +2,7 @@
 
 ## Description
 
-This plugin is a further development of [leafext-update-github](https://github.com/hupe13/leafext-update-github). Back then, I only had two plugins hosted on Github. Now there are a few more.
-The function remains the same: the plugin handles updates for all my WordPress plugins hosted on GitHub.
+The plugin handles updates for all my WordPress plugins hosted on GitHub.
 
 ## Installation
 
