@@ -13,4 +13,4 @@ The plugin handles updates for all my WordPress plugins hosted on GitHub.
 
 ## Changelog
 
-<a href="https://github.com/hupe13/ghu-update-puc/blob/main/changes.md">Changelog</a>
+<a href="https://github.com/hupe13/ghu-update-puc/blob/main/CHANGELOG.md">Changelog</a>

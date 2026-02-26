@@ -4,9 +4,10 @@
  * Description:       If you have installed any plugins from hupe13 hosted on Github, you can receive the updates here.
  * Plugin URI:        https://leafext.de/en/
  * Update URI:        https://github.com/hupe13/ghu-update-puc
- * Version:           251118
- * Requires at least: 6.3
+ * Version:           260226
+ * Requires at least: 6.2
  * Requires PHP:      8.1
+ * Tested up to:      6.9
  * Author:            hupe13
  * Author URI:        https://leafext.de/en/
  * Network:           true

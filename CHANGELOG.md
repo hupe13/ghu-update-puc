@@ -1,5 +1,9 @@
 # Changelog
 
+### 260226
+
+* PCP V 1.8.0 checks reviewed
+
 ### 251118
 
 * admin links

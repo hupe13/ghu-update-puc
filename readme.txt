@@ -1,19 +1,17 @@
 ===  Updates by hupe13 hosted on GitHub ===
 
 Contributors: hupe13
-Tested up to: 6.9
-Stable tag: 251118
-Requires at least: 6.3
+Stable tag: 260226
+Requires at least: 6.2
 Requires PHP: 8.1
+Tested up to: 6.9
 License: GPLv2 or later
 
 If you have installed any plugins from hupe13 hosted on Github, you can receive the updates here.
 
 == Description ==
 
-This plugin is a further development of [leafext-update-github](https://github.com/hupe13/leafext-update-github).
-Back then, I only had two plugins on Github. Now there are a few more.
-The function remains the same: the plugin handles updates for all my WordPress plugins hosted on GitHub.
+The plugin handles updates for all my WordPress plugins hosted on GitHub.
 
 == Installation ==
 
@@ -21,3 +19,7 @@ The function remains the same: the plugin handles updates for all my WordPress p
 * Activate it.
 * Go in the admin menu to Settings - Github Update PUC and set a Github Token if needed.
 * You will get updates with the [Plugin Update Checker](https://github.com/YahnisElsts/plugin-update-checker).
+
+== Changelog ==
+
+<a href="https://github.com/hupe13/ghu-update-puc/blob/main/CHANGELOG.md">Changelog</a>
