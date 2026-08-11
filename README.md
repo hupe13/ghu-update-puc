@@ -4,6 +4,8 @@
 
 The plugin handles updates for all my WordPress plugins hosted on GitHub.
 
+Instead, you can also use [Git Updater](https://github.com/afragen/git-updater) from Andy Fragen.
+
 ## Installation
 
 * Download the [ZIP file](https://github.com/hupe13/ghu-update-puc/archive/refs/heads/main.zip) and install it on the plugin page of your WordPress installation.

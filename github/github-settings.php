@@ -10,13 +10,21 @@ defined( 'ABSPATH' ) || die();
 
 // Init settings fuer update
 function ghupuc_update_init() {
-	add_settings_section( 'updating_settings', '', '', 'ghupuc_settings_updating' );
+	add_settings_section( 'updating_settings', '', '__return_empty_string', 'ghupuc_settings_updating' );
 	add_settings_field( 'ghupuc_updating', esc_html__( 'Github token', 'ghu-update-puc' ), 'ghupuc_form_updating', 'ghupuc_settings_updating', 'updating_settings' );
 	if ( get_option( 'leafext_updating' ) !== false && get_option( 'ghupuc_updating' ) === false ) {
 		add_option( 'ghupuc_updating', get_option( 'leafext_updating' ) );
 		delete_option( 'leafext_updating' );
 	}
-	register_setting( 'ghupuc_settings_updating', 'ghupuc_updating', 'ghupuc_validate_updating' );
+	register_setting(
+		'ghupuc_settings_updating',
+		'ghupuc_updating',
+		array(
+			'type'              => 'string',
+			'sanitize_callback' => 'ghupuc_validate_updating',
+			'default'           => '',
+		)
+	);
 }
 add_action( 'admin_init', 'ghupuc_update_init' );
 

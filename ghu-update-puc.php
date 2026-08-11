@@ -4,10 +4,10 @@
  * Description:       If you have installed any plugins from hupe13 hosted on Github, you can receive the updates here.
  * Plugin URI:        https://leafext.de/en/
  * Update URI:        https://github.com/hupe13/ghu-update-puc
- * Version:           260226
+ * Version:           260811
  * Requires at least: 6.2
  * Requires PHP:      8.1
- * Tested up to:      6.9
+ * Tested up to:      7.1
  * Author:            hupe13
  * Author URI:        https://leafext.de/en/
  * Network:           true
@@ -53,7 +53,7 @@ function ghupuc_network_add_action_update_links( $actions, $plugin ) {
 	}
 	return $actions;
 }
-add_filter( 'network_admin_plugin_action_links', 'ghupuc_network_add_action_update_links', 10, 4 );
+add_filter( 'network_admin_plugin_action_links', 'ghupuc_network_add_action_update_links', 10, 2 );
 
 // Add settings to plugin page
 function ghupuc_add_action_update_links( $actions ) {
@@ -66,3 +66,19 @@ add_filter( 'plugin_action_links_' . GHUPUC_NAME . '/ghu-update-puc.php', 'ghupu
 require_once __DIR__ . '/github/github-functions.php';
 require_once __DIR__ . '/github/github-settings.php';
 require_once __DIR__ . '/github/github-check-update.php';
+
+/**
+ * Deactivation hook.
+ */
+function ghupuc_deactivate() {
+	$cron_tasks = _get_cron_array();
+	foreach ( $cron_tasks as $key => $cron_task ) {
+		foreach ( $cron_task as $hook => $dings ) {
+			if ( str_starts_with( $hook, 'puc_cron_check_updates' ) ) {
+				$timestamp = wp_next_scheduled( $hook );
+				wp_unschedule_event( $timestamp, $hook );
+			}
+		}
+	}
+}
+register_deactivation_hook( __FILE__, 'ghupuc_deactivate' );

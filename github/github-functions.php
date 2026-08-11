@@ -40,6 +40,7 @@ function ghupuc_get_repos() {
 	$releases  = array(
 		'extensions-leaflet-map'         => false,
 		'extensions-leaflet-map-testing' => false,
+		'wimb-test'                      => false,
 	);
 	$git_repos = array();
 	if ( ! function_exists( 'get_plugins' ) ) {
@@ -94,12 +95,11 @@ function ghupuc_table_repos() {
 				$entry['active'] = array();
 				$blogs           = array();
 				if ( function_exists( 'get_sites' ) ) {
-					$sites = get_sites();
-
+					$sites = get_sites( array( 'fields' => 'ids' ) );
 					foreach ( $sites as $site ) {
-						switch_to_blog( $site->blog_id );
+						switch_to_blog( $site );
 						if ( is_plugin_active( plugin_basename( $ghupuc_plugin ) ) ) {
-							$entry['active'][] = $site->blog_id;
+							$entry['active'][] = $site;
 						}
 						restore_current_blog();
 					}

@@ -1,5 +1,11 @@
 # Changelog
 
+### 2608011
+
+* deactivation_hook: delete cron tasks
+* plugin-update-checker 5.7
+* WP 7.1
+
 ### 260226
 
 * PCP V 1.8.0 checks reviewed

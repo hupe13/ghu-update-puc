@@ -1,10 +1,10 @@
 ===  Updates by hupe13 hosted on GitHub ===
 
 Contributors: hupe13
-Stable tag: 260226
+Stable tag: 260811
 Requires at least: 6.2
 Requires PHP: 8.1
-Tested up to: 6.9
+Tested up to: 7.1
 License: GPLv2 or later
 
 If you have installed any plugins from hupe13 hosted on Github, you can receive the updates here.
